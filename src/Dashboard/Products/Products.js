@@ -4,38 +4,25 @@ import React, { useContext, useState } from 'react';
 import toast from 'react-hot-toast';
 import { Navigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/Context';
-
-import ConfirmationModal from '../../Shared/ConfirmationModal/ConfirmationModal';
 import Loading from '../../Shared/Loading/Loading';
 
 const Products = () => {
     const {user,} = useContext(AuthContext)
-    const [deletingDoctor, setDeletingDoctor] = useState(null)
 
-
-    const closeModal = () => {
-        setDeletingDoctor(null)
-    }
-    const handleItems = () => {
-
-    }
     const { data: items = [], isLoading, refetch } = useQuery({
         queryKey: ['addProduct', user?.email],
         queryFn: async () => {
             try {
-                const res = await fetch(`https://glamy-girl-server.vercel.app/addProduct`, {
-                    
+                const res = await fetch(`https://glamy-girl-server.vercel.app/addProduct`, {  
                 })
                 const data = await res.json()
                 return data
-
             }
             catch (errors) {
 
             }
         }
     })
-
 
     const handleDeleteDoctor = (id) => {
         console.log(id)
@@ -49,14 +36,9 @@ const Products = () => {
             if(data.deletedCount > 0){
                 refetch()
                 toast.success("Deleted Successfully")
-            }
-            
+            }  
         })
     }
-
-   
-      
-
 
     if(isLoading){
         return <Loading></Loading>
@@ -65,6 +47,7 @@ const Products = () => {
 
     return (
         <div className='my-10 mb-60 text-start px-6'>
+              <h1 className='text-white-500 text-xs font-bold mb-2'>Admin Action Board</h1>
             <h1 className='text-4xl font-bold  text-black mb-10'>Added Products</h1>
             <div className="overflow-x-auto">
                 <table className="table w-full">
@@ -76,10 +59,8 @@ const Products = () => {
                             <th>Name</th>
                             <th>Email</th>
                             <th>Price</th>
-                            <th>Status</th>
-                          
-                          
-                        </tr>
+                            <th>Status</th>                          
+                            </tr>
                     </thead>
                     <tbody className=' my-4'>
 
@@ -93,12 +74,9 @@ const Products = () => {
                                         </div>
                                     </div></td>
                                     <td>{item.name}</td>
-                                    <td>{item.email}</td>
-                                    
-                                    <td>{item.price}</td>
+                                    <td>{item.email}</td>                                   
+                                    <td>${item.price}</td>
                                     <td>Unsold</td>
-                                   
-                                 
                                 </tr>)
                         }
 

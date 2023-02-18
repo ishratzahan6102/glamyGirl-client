@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaHeart, FaSearch, FaShoppingBag } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-
+import './CategoryCard.css'
 
 const CategoryCard = ({card}) => {
 
@@ -10,9 +10,9 @@ const CategoryCard = ({card}) => {
     return (
         <div className='text-start'>
             <div className="card mx-auto w-80  ">
-                <img src={img} className='h-72 w-80 lg:h-full  relative mx-auto card-img' alt="Shoes" />
-                <div className=' h-full w-full  product-hover mx-auto absolute top-0 right-0 lg:right-0 '>
-                    <div className='top-10 p-4 right-0 flex flex-col lg:right-0 absolute'>
+                <img src={img} className='max-h-64 w-80  relative mx-auto card-img' alt="makeup" />
+                <div className=' h-full w-full  product-hover mx-auto absolute top-0 left-0 lg:left-0 '>
+                    <div className='top-10 p-4 right-0 flex flex-col lg:left-0 absolute'>
                         <Link>
                             <button className="btn rounded-none  text-white   btn-square">
                                 <FaSearch></FaSearch>
@@ -25,7 +25,7 @@ const CategoryCard = ({card}) => {
                         </Link>
                         <Link>
                             <button className="btn rounded-none  text-white   btn-square">
-                                
+                                <FaShoppingBag></FaShoppingBag>
                             </button>
                         </Link>
                     </div>

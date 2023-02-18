@@ -42,8 +42,6 @@ const AddProduct = () => {
                     }
 
                     console.log(items)
-
-                    // post item information to the database
                     fetch(`https://glamy-girl-server.vercel.app/addProduct`, {
                         method: 'POST',
                         headers: {
@@ -54,29 +52,25 @@ const AddProduct = () => {
                         .then(res => res.json())
                         .then(result => {
                             console.log(result)
-                            toast.success(`${data.name} is added successfully`)
+                            toast.success(`${data.product} added successfully`)
                             navigate('/dashboard/product')
                         })
 
                 }
             })
-
     }
 
-
-    // if (isLoading) {
-    //     return <Loading></Loading>
-    // }
     return (
-        <div className='w-full shadow  bg-sky-100 p-4 md:p-20'>
-            <h1 className='text-3xl md:text-5xl font-bold text-primary pb-6'>Add Your Product</h1>
+        <div className='my-10 mb-60 text-start px-6'>
+            <h1 className='text-white-500 text-xs font-bold mb-2'>Admin Action Board</h1>
+            <h1 className='text-4xl font-bold  text-black mb-10 '>Add Products</h1>
 
             <form className="" onSubmit={handleSubmit(handleAddDoctor)}>
                 <div className="form-control w-full mb-1">
                     <label className="label">
                         <span className="label-text text-black">Your name - </span>
                     </label>
-                    <input type='text'  defaultValue={user?.displayName} placeholder="Insert your name" className='input input-bordered input-primary' {...register("name", { required: "is required" })} />
+                    <input type='text' defaultValue={user?.displayName} placeholder="Insert your name" className='input input-bordered input-primary' {...register("name", { required: "is required" })} />
                     {errors.name && <p className='text-error'>{errors.name?.message}</p>}
                 </div>
 
@@ -119,19 +113,7 @@ const AddProduct = () => {
                     <input placeholder="Insert year of location" type='text' className='input input-bordered input-primary' {...register("location", { required: "is required" })} />
                     {errors.name && <p className='text-error'>{errors.name?.message}</p>}
                 </div>
-
-
-
-
-
-                <div className="form-control w-full mb-1 pb-6">
-
-                   
-                  
-
-
-
-
+                     <div className="form-control w-full mb-1 pb-6">
 
                     <div className="form-control w-full mb-1">
                         <label className="label">

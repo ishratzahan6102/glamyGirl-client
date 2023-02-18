@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Context/Context";
+import Loading from "../../Shared/Loading/Loading";
 
 
 
@@ -34,12 +35,7 @@ const Customers = () => {
                         phone: data.phoneNumber,
                         location: data.location,
                         picture: imgData.data.url
-
                     }
-
-                    console.log(items)
-
-                    // post item information to the database
                     fetch(`https://glamy-girl-server.vercel.app/addUser`, {
                         method: 'POST',
                         headers: {
@@ -50,20 +46,17 @@ const Customers = () => {
                         .then(res => res.json())
                         .then(result => {
                             console.log(result)
-                            toast.success(`${data.name} is added successfully`)
                             navigate('/dashboard/customer')
+                            toast.success(`${data.name} is added successfully`)
                         })
                 }
             })
     }
 
-
-    // if (isLoading) {
-    //     return <Loading></Loading>
-    // }
     return (
-        <div className='w-full shadow  bg-sky-100 p-4 md:p-20'>
-            <h1 className='text-3xl md:text-5xl font-bold text-primary pb-6'>Add Customer</h1>
+        <div className='my-10 mb-60 text-start px-6'>
+        <h1 className='text-white-500 text-xs font-bold mb-2'>Admin Action Board</h1>
+        <h1 className='text-4xl font-bold  text-black mb-10'>Add Customers</h1>
             <form className="" onSubmit={handleSubmit(handleAddDoctor)}>
                 <div className="form-control w-full mb-1">
                     <label className="label">
@@ -103,7 +96,7 @@ const Customers = () => {
                         {errors.img && <p className='text-error'>{errors.img?.message}</p>}
                     </div>
                 </div>
-                <input className='btn btn-primary w-full mb-1' value='Add Product' type="submit" />
+                <input className='btn btn-primary w-full mb-1' value='Add Customer' type="submit" />
                 <Toaster />
             </form>
 

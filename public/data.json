@@ -1,22 +1,68 @@
 [
-   
-    {
-      "seller_name": "Tom",
-      "img": "https://i.ibb.co/QXmpjtd/nokia-1.jpg",
-      "brand": "Cerave"
-    },
-    
-    {
-      "seller_name": "Tom",
-      "img": "https://i.ibb.co/QXmpjtd/nokia-1.jpg",
-      "brand": "Makeup Revolution"
-    },
+  {"price":"1488","title":"Cerave Moisturizer","seller_name":"Tom","img":"https://glamygirl.com/wp-content/uploads/CeraVe-Daily-Moisturizing-Lotion-355ml.jpg","brand":"Cerave" ,  "benefits": {
+    "p1" : "[ HYALURONIC ACID MOISTURIZER ] With hyaluronic acid, ceramides and MVE technology for 24 hour hydration. Rich, velvety texture that leaves skin feeling smooth, it is absorbed quickly for softened skin without greasy, sticky, feel.",
+    "p2" : "[ ESSENTIAL CERAMIDES ] Ceramides are found naturally in the skin and make up 50% of the lipids in the skin barrier. All CeraVe products are formulated with three essential ceramides (1, 3, 6-II) to help restore and maintain the skin’s natural barrier.",
+    "p3" : "[ DRY SKIN RELIEF ] A deficiency of ceramides in skin can often be associated with dry skin, which can feel itchy and look flaky. CeraVe Moisturizing Cream was shown to increase the skin's level of ceramides after 4 weeks.",
+    "p4" : "[ GENTLE DAILY MOISTURIZER ] For face and body or can be used as a hand cream for dry skin relief. Holds National Eczema Association (NEA) Seal of Acceptance. Fragrance free, paraben free, allergy-tested, and non-comedogenic."
+}},
 
-    {
-      "seller_name": "Tom",
-      "img": "https://i.ibb.co/QXmpjtd/nokia-1.jpg",
-      "brand": "Focallure"
-    }
+  {"price":"1488","title":"Makeup Revolution Foundation Warm","seller_name":"Tom","img":"https://glamygirl.com/wp-content/uploads/Maybelline-Fit-Me-Matte-Poreless-Foundation-128-Warm-Nude-280x280.jpg","brand":"Makeup Revolution", "benefits": {
+    "p1" : "OIL-FREE YET CREAMY: A comfortable formula that dries down to a long-lasting, demi-matte finish, it won’t settle into fine lines or cling to dry patches",
+    "p2" : "OIL-FREE YET CREAMY: A comfortable formula that dries down to a long-lasting, demi-matte finish, it won’t settle into fine lines or cling to dry patches",
+    "p3" : "HOW TO USE: Swipe on wherever you want coverage using the doe foot applicator. Blend out using a synthetic brush or damp blending sponge. For added staying power, finish with a setting powder and fixing spray to lock your makeup in place all day",
+    "p4" : "CRUELTY-FREE: Revolution Beauty products are cruelty-free and always have been. We're PETA-certified and never allow animal testing at any stage of development for both ingredients and final products."
+}},
+
+   {"price":"1488","title":"Cerave Eye Roller","seller_name":"Tom","img":"https://glamygirl.com/wp-content/uploads/CeraVe-Eye-Repair-Cream.jpg","brand":"Cerave", "benefits": {
+    
+    "p1" : "[ EYE CREAM ANTI AGING ] CeraVe Skin Renewing Eye cream deeply hydrates, visibly smooths, firms, and brightens delicate skin around eyes while helping restore the protective skin barrier.",
+    "p2" : "[ CAFFEINE EYE CREAM FOR DARK CIRCLES & PUFFINESS ] Formulated with caffeine to help visibly reduce puffiness, peptides to help reduce the appearance of fine lines & crow's feet wrinkles, and niacinamide to help visibly smooth fine lines & brighten skin.",
+    "p3" : "[EYE WRINKLE CREAM FOR SENSITIVE SKIN] This hydrating eye cream is fragrance-free, paraben-free, allergy-tested, ophthalmologist tested, and suitable for contact lens wearers.",
+    "p4" : "[ 3 ESSENTIAL CERAMIDES ] Ceramides are found naturally in the skin and make up 50% of the lipids in the skin barrier. All CeraVe products, formulated with three essential ceramides (1, 3, 6-II)to help maintain the skin’s natural barrier."
+}},
+
+   {"price":"1488","title":"Cerave LipBalm","seller_name":"Tom","img":"https://glamygirl.com/wp-content/uploads/CeraVe-Skin-Renewing-Nightly-Exfoliating-Treatment.png","brand":"Cerave", "benefits": {
+    "p1" : "Atoderm Lip Stick soft and creamy texture hydrates and helps soothing your lips, even the most sensitive ones.",
+    "p2" : "[ CAFFEINE EYE CREAM FOR DARK CIRCLES & PUFFINESS ] Formulated with caffeine to help visibly reduce puffiness, peptides to help reduce the appearance of fine lines & crow's feet wrinkles, and niacinamide to help visibly smooth fine lines & brighten skin.",
+    "p3" : "[EYE WRINKLE CREAM FOR SENSITIVE SKIN] This hydrating eye cream is fragrance-free, paraben-free, allergy-tested, ophthalmologist tested, and suitable for contact lens wearers.",
+    "p4" : "[ 3 ESSENTIAL CERAMIDES ] Ceramides are found naturally in the skin and make up 50% of the lipids in the skin barrier. All CeraVe products, formulated with three essential ceramides (1, 3, 6-II)to help maintain the skin’s natural barrier."
+}},
+
+   {"price":"1488","title":"Makeup Revolution Foundation Base","seller_name":"Tom","img":"https://glamygirl.com/wp-content/uploads/Maybelline-Superstay-Full-Coverage-Foundation-03-True-Ivory-280x280.jpg","brand":"Makeup Revolution", "benefits": {
+    "p1" : "NEW to the Conceal & Define family, meet our Conceal & Define Full Coverage Foundation. Offering lightweight yet buildable coverage in 50 skin-true shades, this versatile foundation is designed to suit every skin type and tone. With an oil-free yet creamy and comfortable formula that dries down to a long-lasting, demi-matte finish, it won’t settle into fine lines or cling to dry patches. Housed in a luxe glass bottle with a jumbo doe-foot applicator for greater control and less waste, this foundation offers highly pigmented coverage that can be layered or diffused to suit your look. Swipe on and blend out to ramp up the coverage for a ‘real skin’ finish that diffuses blemishes and uneven skin tone. Or let your complexion’s natural character shine through using a small amount with a damp beauty sponge for veil-like coverage. Follow with your favourite shades of Conceal & Define Concealer to highlight, contour or conceal. Vegan. Cruelty-Free. Paraben free. Oil free.",
+    "p2" : "[ CAFFEINE EYE CREAM FOR DARK CIRCLES & PUFFINESS ] Formulated with caffeine to help visibly reduce puffiness, peptides to help reduce the appearance of fine lines & crow's feet wrinkles, and niacinamide to help visibly smooth fine lines & brighten skin.",
+    "p3" : "[EYE WRINKLE CREAM FOR SENSITIVE SKIN] This hydrating eye cream is fragrance-free, paraben-free, allergy-tested, ophthalmologist tested, and suitable for contact lens wearers.",
+    "p4" : "[ 3 ESSENTIAL CERAMIDES ] Ceramides are found naturally in the skin and make up 50% of the lipids in the skin barrier. All CeraVe products, formulated with three essential ceramides (1, 3, 6-II)to help maintain the skin’s natural barrier."
+
+}},
+
+   {"price":"1488","title":"Makeup Revolution Foundation Cool","seller_name":"Tom","img":"https://glamygirl.com/wp-content/uploads/Maybelline-Superstay-Full-Coverage-Foundation-%E2%80%93-58-True-Caramel-280x280.jpg","brand":"Makeup Revolution", "benefits": {
+    "p1" : "NEW to the Conceal & Define family, meet our Conceal & Define Full Coverage Foundation. Offering lightweight yet buildable coverage in 50 skin-true shades, this versatile foundation is designed to suit every skin type and tone. With an oil-free yet creamy and comfortable formula that dries down to a long-lasting, demi-matte finish, it won’t settle into fine lines or cling to dry patches. Housed in a luxe glass bottle with a jumbo doe-foot applicator for greater control and less waste, this foundation offers highly pigmented coverage that can be layered or diffused to suit your look. Swipe on and blend out to ramp up the coverage for a ‘real skin’ finish that diffuses blemishes and uneven skin tone. Or let your complexion’s natural character shine through using a small amount with a damp beauty sponge for veil-like coverage. Follow with your favourite shades of Conceal & Define Concealer to highlight, contour or conceal. Vegan. Cruelty-Free. Paraben free. Oil free.",
+    "p2" : "[ CAFFEINE EYE CREAM FOR DARK CIRCLES & PUFFINESS ] Formulated with caffeine to help visibly reduce puffiness, peptides to help reduce the appearance of fine lines & crow's feet wrinkles, and niacinamide to help visibly smooth fine lines & brighten skin.",
+    "p3" : "[EYE WRINKLE CREAM FOR SENSITIVE SKIN] This hydrating eye cream is fragrance-free, paraben-free, allergy-tested, ophthalmologist tested, and suitable for contact lens wearers.",
+    "p4" : "[ 3 ESSENTIAL CERAMIDES ] Ceramides are found naturally in the skin and make up 50% of the lipids in the skin barrier. All CeraVe products, formulated with three essential ceramides (1, 3, 6-II)to help maintain the skin’s natural barrier."
+}},
+
+   {"price":"1488","title":"Focallure Foundation","seller_name":"Tom","img":"https://glamygirl.com/wp-content/uploads/Wet-n-Wild-Photo-Focus-Pressed-Powder-E825C-Tan-Beige.jpg","brand":"Focallure", "benefits": {
+    "p1" : "Our new high-performing, skin-perfecting foundation underwent major road testing under seven different photo lighting conditions to deliver flawless camera-ready makeup every time.",
+    "p2" : "Our new high-performing, skin-perfecting foundation underwent major road testing under seven different photo lighting conditions to deliver flawless camera-ready makeup every time.",
+    "p3" : "Color matched for all undertones with a matte, second-skin finish-soft focus properties help perfect appearance of skin",
+    "p4" : "Your skin, only better. Our new high-performing, skin-perfecting foundation underwent major road testing under seven different photo lighting conditions to deliver flawless camera-ready makeup every time. Specially made with a matte, light-diffusing complex to give your skin nofilter perfection."
+}},
+
+   {"price":"1488","title":"Focallure LipBalm","seller_name":"Tom","img":"https://glamygirl.com/wp-content/uploads/Golden-Rose-Fruit-Roll-On-Lipgloss-Lemon-280x280.jpg","brand":"Focallure", "benefits": {
+    "p1" : "FLOWER BALM: Treat yourself to the original Flower Balm, an all-natural, vegan lip stain and the ONLY flower gel lipstick to feature real chrysanthemum flowers inside.",
+    "p2" : "POP-FOR-YOU PINK: This magical lip balm applies clear, then reacts with your lips’ natural pH levels to blossom into your own unique light pink tint, making it a fun gloss base for any makeup look.",
+    "p3" : "LOTION FOR YOUR LIPS: Flower Balm’s secret plumping moisturizer formula is infused with nourishing vitamins for cool, all-day hydration and long-lasting moisture, allowing you to go hour-by-hour with very soft, kiss-worthy lips.",
+    "p4" : "THE WINKY PROMISE: We set out to produce vegan cosmetics so you and your face look and feel unstoppable. Sealed with our Winky Promise of only cleaner, cruelty-free makeup formulas without sulfates, gluten, phthalates, or animal testing.."
+}},
+
+   {"price":"1488","title":"Focallure Lipgloss","seller_name":"Tom","img":"https://glamygirl.com/wp-content/uploads/Imagic-Beauty-lip-Gloss-31-280x280.jpg","brand":"Focallure", "benefits": {
+    "p1" : "Hydrating Lip Balm-in-Gloss: Wrap your lips in this silky liquid balm infused with Pomegranate Extract and Hyaluronic Acid. Lips feel instantly moisturized, conditioned and kissably soft, with sheer natural color for a healthy glow",
+    "p2" : "Non-Sticky Formula: Tinted lip gloss meets moisturizing lip balm in our hybrid lip product. Featuring a unique Infinity Applicator and available in 12 buildable, dewy shades. Our balm-in-gloss is dermatologist tested and suitable for sensitive lips",
+    "p3" : "Revolutionize Your Lip Regime: From matte to glossy, we offer a wide range of highly pigmented lipstick shades to suit every complexion. Our liquid lipsticks, lip crayons, lip liners and lip glosses have your lips covered",
+    "p4" : "L'Oreal Paris Beauty: A leading total beauty care company based in Paris, we offer innovative products and unique expertise from beauty experts in makeup, skin care, hair care, styling and hair color."
+}}
 
 ]
 

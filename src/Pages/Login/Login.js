@@ -29,26 +29,9 @@ const Login = () => {
 
     const handleLogin = data => {
         console.log(data)
-        setLoginError('')
-
-
-        loginUser(data.email, data.password)
-        .then((result) => {
-            const user = result.user;
-            console.log(user)
-            toast.success(`Welcome back ${user.displayName}.`)
-            setLoginUserEmail(data.email)
-            navigate('/') 
-        
-        })
-        .catch((error) => { 
-            console.log(error.message)
-            setLoginError(error.message)
-        });
-
-
-  
-
+        toast.success(`Welcome back!`)
+        navigate('/') 
+           
     }
  
   
@@ -71,22 +54,22 @@ const Login = () => {
 
 
     return (
-        <div className="hero  mx-auto bg-white text-black p-0 lg:p-20 ">
+        <div className="hero  mx-auto bg-white text-black p-0 lg:p-10  ">
         <div className="hero-content grid grid-cols-1  gap-6 md:grid-cols-2 ">
 
             <img src={login} className="w-full rounded-lg " />
             <div>
             <div className='flex '>
-               <div className='w-full shadow  bg-sky-200 p-4 md:p-10'>
+               <div className='w-full shadow p-4 lg:p-28'>
                     <h2 className='text-4xl text-black font-bold uppercase mb-4'>Log In</h2>
                     <form onSubmit={handleSubmit(handleLogin)}>
 
                  <div className="form-control w-full ">
                     <label className="label">
-                        <span className="label-text text-black">Email</span>
+                        <span className="label-text text-black">Phone number</span>
                     </label>
-                    <input type='email'  className='input bg-white input-bordered input-primary' {...register("email" , {required: "Email address is required"})}  />
-                    {errors.email && <p className='text-error'>{errors.email?.message}</p>}
+                    <input type='number'  className='input bg-white input-bordered input-primary' {...register("number" , {required: "number address is required"})}  />
+                    {errors.number && <p className='text-error'>{errors.number?.message}</p>}
                 </div>
 
                     
@@ -104,19 +87,19 @@ const Login = () => {
                 </div>
                 
                 {/* <p>{data}</p> */}
-                <input className='btn border-none bg-gradient-to-r from-primary font-bold text-white  p-2 to-violet-600 w-full uppercase' value='Log In' type="submit" />
+                <input className='btn border-none bg-gradient-to-r from-primary font-bold text-white to-black p-2 w-full uppercase' value='Log In' type="submit" />
                 {loginError && <p className='text-errors'>{loginError}</p>}
-                <p className='text-black'>New to Astor ?<Link  className=' font-bold text-black mt-4' to='/signup'> Create New Account </Link></p>
+                <p className='text-black'>New to GlamyGirl?<Link  className=' font-bold text-black mt-4' to='/signup'> Create New Account </Link></p>
                 <div className='divider'>OR</div>
 
 
-                        <div  onClick={handleGoogle} class="google-btn w-full  bg-gradient-to-r from-primary  to-violet-600 ">
-                        <div class="google-icon-wrapper">
-                            <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
-                        </div>
-                        
-                        <p class="btn-text  "><b>Sign in with google</b></p>
-                        </div>
+                      
+                <div onClick={handleGoogle} class="gbtn border-none flex gap-2 flex-row items-center p-2">
+                                    <div class="google-icon-wrapper">
+                                        <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" />
+                                    </div>
+                                    <p class="btn-text  "><b>Sign in with google</b></p>
+                                </div>
 
 
               

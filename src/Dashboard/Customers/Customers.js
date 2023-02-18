@@ -4,9 +4,9 @@ import React, { useContext, useState } from 'react';
 import toast from 'react-hot-toast';
 import { Navigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/Context';
-
-import ConfirmationModal from '../../Shared/ConfirmationModal/ConfirmationModal';
 import Loading from '../../Shared/Loading/Loading';
+
+
 
 const Customers = () => {
     const {user,} = useContext(AuthContext)
@@ -36,14 +36,6 @@ const Customers = () => {
         }
     })
 
-
-
-    
-
-   
-      
-
-
     if(isLoading){
         return <Loading></Loading>
     }
@@ -51,20 +43,20 @@ const Customers = () => {
 
     return (
         <div className='my-10 mb-60 text-start px-6'>
-            <h1 className='text-4xl font-bold  text-black md:text-white mb-10'>ITEMS FOR SELL</h1>
-            <h1 className='text-white-500 text-sm font-bold mb-2'>Click the advertise button to display your item at Homepage.</h1>
+              <h1 className='text-white-500 text-xs font-bold mb-2'>Admin Action Board</h1>
+            <h1 className='text-4xl font-bold  text-black mb-10'>Added Customers</h1>
             <div className="overflow-x-auto">
                 <table className="table w-full">
 
                     <thead>
                         <tr>
                             <th>Index</th>
-                            <th>Image</th>
-                            <th>Name</th>
-                            <th>Price</th>
-                            <th>Status</th>
-                            <th>Pending</th>
-                            <th>Delete Post</th>
+                            <th>Avatar</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Location</th>
+                    
                         </tr>
                     </thead>
                     <tbody className=' my-4'>
@@ -78,10 +70,10 @@ const Customers = () => {
                                             <img src={item.picture}  alt="doctors-photo"/>
                                         </div>
                                     </div></td>
-                                    <td>{item.seller_name}</td>
+                                    <td>{item.user}</td>
                                     <td>{item.email}</td>
-                                    <td>{item.name}</td>
-                                    <td>{item.price}</td>
+                                    <td>{item.phone}</td>
+                                    <td>{item.location}</td>
                                    
                                     
                                  
